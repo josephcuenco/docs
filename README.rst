@@ -2,17 +2,45 @@
 MongoDB Documentation
 =====================
 
-This repository contains a major revision of the MongoDB documentation,
-currently accessible at https://www.mongodb.com/docs/manual/. You can build
-the documentation locally if you have `giza
-<https://pypi.python.org/pypi/giza>`_ installed: ::
+Welcome to the MongoDB documentation repository! This repository contains the source files for the official MongoDB documentation, available at MongoDB Docs. It is maintained by the MongoDB Documentation Team, and contributions from the community are welcome.
 
-     python2 -m pip install giza
-     git clone https://github.com/mongodb/docs.git
-     cd docs/
-     make html
+This documentation covers topics such as installation, configuration, querying, and advanced MongoDB features. Your contributions help keep the documentation accurate and useful.
 
-If successful, the built HTML files will be located in ``build/<branch>/html/`` (for example ``build/master/html/`` when on the git ``master`` branch).
+
+Building the Documentation
+--------------------------
+Prerequisites:
+
+- Python 2.x (required by giza) 
+
+- pip (Python package manager) 
+
+- giza: Python-based command-line tool used to build and manage complex documentation projects
+
+
+
+To build the MongoDB documentation locally, follow these steps:
+
+Install giza:
+
+``` 
+python2 -m pip install giza
+``` 
+
+Clone this repository:
+
+```
+git clone https://github.com/mongodb/docs.git
+cd docs/
+```
+
+Build the documentation:
+
+```
+make html
+```
+
+The HTML files will be located in build/<branch>/html/ (e.g., build/master/html/).
 
 Contribute
 ----------
@@ -30,8 +58,11 @@ To contribute to the documentation,
 Report Issues
 -------------
 
-To file issues or requests regarding the documentation, go to the
-`Documentation Jira Project <https://jira.mongodb.org/browse/DOCS>`_.
+If you encounter an issue or have a request for new documentation, submit an issue in the `Documentation Jira Project <https://jira.mongodb.org/browse/DOCS>`_. When submitting an issue, please include:
+
+- A detailed description of the problem or request.
+- A link to the affected documentation (if applicable).
+- Any suggestions or corrections.
 
 License
 -------
